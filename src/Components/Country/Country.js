@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Country = () => {
+const Country = (props) => {
     return (
         <div>
-            <h1>This is a single Country</h1>
+            <h1>Name: {props.name}</h1>
+            <h4>Capital:{props.capital}</h4>
+            <h4>Population:{props.population}</h4>
         </div>
     );
 };
